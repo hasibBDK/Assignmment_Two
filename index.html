@@ -6,17 +6,21 @@
     <title>Fitness Website</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/responsive.css">
 </head>
 <body>
     <header class="bg-light">
         <nav class="navbar">
             <div class="logo">Fitness</div>
-            <ul>
+            <ul class="nav-icon">
                 <li><a href="#" class="active">Home</a></li>
                 <li><a href="#">Service</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">About</a></li>
             </ul>
+            <div class="menu-logo">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </nav>
 
         <div class="banner">
@@ -38,8 +42,19 @@
                 <div class="hero-image">
 
                     <img src="images/Images 2.png" alt="Fitness Man">
-                    <div class="video-tutorial">350+<br>Video tutorial</div>
-                    <div class="workout-videos"><span class="number">500+</span><br><span class="pera">Free Workout Videos</span></div>
+                    <div class="video-tutorial">
+                        <div class="ball"></div>
+                        <div>
+                            <span class="number">350+</span>
+                            <br>
+                            <span class="para" >Video tutorial</span>
+                        </div>
+                    </div>
+                    <div class="workout-videos">
+                        <span class="number">500+</span>
+                        <br>
+                        <span class="pera">Free Workout Videos</span>
+                    </div>
                 </div>
                 
             
@@ -146,12 +161,94 @@
                 <button type="submit">Calculate</button>
             </div>
         </div>
+
+
+        
+        <div class="team-section">
+            <div class="team-header">
+                <h2 class="heading">Meet Our Team</h2>
+                <p class="team-description">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="images/trainer1.png" alt="Jerome Bell">
+                    <div class="team-para">
+                        <h3 class="member-name">Jerome Bell</h3>
+                        <p class="team-title">Trainer</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="images/trainer2.png" alt="Cameron Williamson">
+                    <div class="team-para">
+                        <h3 class="member-name">Cameron Williamson</h3>
+                        <p class="team-title">Trainer</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="images/trainer3.png" alt="Darrell Steward">
+                    <h3></h3>
+                    <div class="team-para">
+                        <h3 class="member-name">Darrell Steward</h3>
+                        <p class="team-title">Trainer</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="images/trainer4.png" alt="Dianne Russell">
+                    <div class="team-para">
+                        <h3 class="member-name">Dianne Russell</h3>
+                        <p class="team-title">Trainer</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="images/trainer5.png" alt="Cody Fisher">
+                    <div class="team-para">
+                        <h3 class="member-name">Cody Fisher</h3>
+                        <p class="team-title">Trainer</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="images/trainer6.png" alt="Theresa Webb">
+                    <div class="team-para">
+                        <h3 class="member-name">Theresa Webb</h3>
+                        <p class="team-title">Trainer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         
             
     </main>
-    <footer>
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h1>Fitness</h1>
+                <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts.</p>
+            </div>
+            <div class="footer-links get-started1">
+                <h2>Get Started</h2>
+                <ul>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Affiliate Program</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h2>Get Started</h2>
+                <ul>
+                    <li><a href="#">Fitness</a></li>
+                    <li><a href="#">Platform</a></li>
+                    <li><a href="#">Workout Library</a></li>
+                    <li><a href="#">App Design</a></li>
+                </ul>
+            </div>
+        </div>
 
+        <div class="footer-bottom">
+            <p>All rights reserved &copy;Fitness 2024</p>
+        </div>
     </footer>
+    
     
         
  </body>

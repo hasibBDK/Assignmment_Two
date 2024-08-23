@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
+@import url('https://fonts.cdnfonts.com/css/miama');
 /* styles.css */
 
 /* styles.css */
 
 body {
+  width: 1440px;
+  margin: 0 auto;
+  color: rgb(255, 255, 255);
   font-family: 'Inter', sans-serif;
-  margin: 0;
-  padding: 0;
   background-color: rgba(17, 17, 17, 1);
 }
 
@@ -15,45 +16,31 @@ body {
   background-color: rgba(17, 17, 17, 1);
   width: 100%;
 }
+
 .navbar {
-  max-width: 1060px;
-  height: 46px;
-  margin-top: 57px;
-  margin-right: 190px;
-  margin-left: 190px;
+  margin: 5% 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border: 1px solid snow;
 }
-.navbar, .banner{
-  max-width: 1440px;
-}
 
 
-nav .logo {
+.logo {
   font-size: 36px;
   font-weight: bold;
   color: rgb(230, 83, 60);
-  width: 132px;
-  height: 43px;
 }
 
 nav ul {
   list-style: none;
-  width: 465px;
-  height: 46px;
+  width: 40%;
   display: flex;
-  box-sizing: border-box;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 39px;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  margin-right: 2%;
 }
 
-nav ul li {
-  justify-content: space-around;
-}
 
 nav ul li a {
   text-decoration: none;
@@ -61,6 +48,7 @@ nav ul li a {
   font-size: 18px;
   font-weight: 400;
 }
+
 ul .active{
   width: 92px;
   height: 38px;
@@ -69,60 +57,52 @@ ul .active{
   padding: 8px 20px 8px 20px;
 }
 
-
+.menu-logo {
+  display: none;
+}
 
 .banner{
+  margin: 5% 10%;
+  border: 2px solid brown;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-direction: row;
-  padding: 100px 0;
 }
 
 .hero-content {
-  width: 520px;
-  height: 440px;
   border: 2px solid snow;
-  margin-top: 96px;
-  margin-left: 190px;
-
+  width: 45%;
 }
+
 .content{
-  width: 520px;
-  height: 282px;
   border: 2px solid red;
   display: flex;
   flex-direction: column;
-  
 }
 
 .hero-content h1 {
   font-size: 78px;
-  font-weight: bold;
-  gap: 28;
-  color: rgb(255, 255, 255);
+  font-weight: 900;
+  line-height: 120%; 
 }
 
-.hero-content h1 .italic {
-  font-style: italic;
-  font-family: 'Dancing Script',sans-serif; 
+.italic {
+  font-family: 'Miama', sans-serif;
+  font-weight: normal;   
+  height: 1px;                      
 }
 
- .para{
+.para{
   color: rgba(255, 255, 255, 0.5);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
-  height: 48px;
-  border: 1px solid beige;
-  margin-top: 28px;
 }
+
 .btn{
-  margin-top: 28px;
-  width: 462px;
-  height: 54px;
+  margin-top: 4%;
   display: flex;
-  flex-direction: row;
   align-items: flex-start;
+  gap: 2%;
 }
 
 
@@ -130,54 +110,47 @@ ul .active{
 .join-btn {
   background-color: #ff4500;
   color: #ffffff;
-  padding: 15px 30px;
-  margin-right: 20px;
+  padding: 3% 3%;
   border: none;
-  border-radius: 25px;
-  cursor: pointer;
-  font-size: 16px;
+  font-size: 1rem;
+  border-radius: 20px;
   font-weight: bold;
 }
 
 .download-btn {
   background-color: #000000;
   color: #ffffff;
-  border: 2px solid #ffffff;
-  padding: 15px 30px;
-  margin-right: 20px;
+  padding: 3% 3%;
   border: none;
-  border-radius: 25px;
-  cursor: pointer;
+  border-radius: 20px;
   font-size: 16px;
   font-weight: bold;
 }
 
 .hero-image {
   position: relative;
-  margin-top: 32px;
-  margin-right: 214px;
 }
 
 .hero-image img {
   width: 100%;
-  max-width: 400px;
-  border-radius: 10px;
 }
 
 .video-tutorial, .workout-videos {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.7);
-  padding: 10px 20px;
+  padding: 4% 5%;
   border-radius: 10px;
   font-weight: bold;
   text-align: center;
 }
 
 .video-tutorial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
   top: 60%;
-  left: -80px;
-  width: 206px;
-  height: 96px;
+  left: -5%;
   box-sizing: border-box;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
@@ -186,26 +159,30 @@ ul .active{
 }
 
 .workout-videos {
-  top: 10%;
-  right: -80px;
-  width: 193px;
-  height: 98px;
+  top: 20%;
+  right: -10%;
   box-sizing: border-box;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   backdrop-filter: blur(20px);
   background: rgba(255, 255, 255, 0.1);
 }
-.number{
-  width: 116px;
+
+.ball {
+  width:40px;
   height: 40px;
+  border: 2px solid red;
+  background: red;
+  border-radius: 50%;
+}
+.number {
   font-size: 40px;
   color: rgb(255, 255, 255);
 }
 .pera{
   color: rgba(255, 255, 255, 0.65);
-font-size: 13px;
-font-weight: 400;
+  font-size: 13px;
+  font-weight: 400;
 }
 
 
@@ -220,7 +197,6 @@ font-weight: 400;
 
 .heading-habits {
   width: 671px;
-  height: 120px;
   align-items: center;
   margin-left: 186.5px;
   margin-bottom: 54px;
@@ -279,13 +255,7 @@ font-weight: 400;
   margin-top: 5px;
 }
 
-
-
-
-
 .run{
-  width: 1060px;
-  height: 371px;
   margin: 0 auto;
   margin-top: 100px;
   display: flex;
@@ -361,18 +331,12 @@ font-weight: 400;
   font-weight: 400;
 }
 
-
-
-
 .bmi-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  height: 487px;
   margin-top: 88px;
   background: rgb(34, 34, 34);
-  border: 2px solid rgb(230, 83, 60);
 }
 
 .bmi-chart{
@@ -471,8 +435,6 @@ font-weight: 400;
   color: rgba(255, 255, 255, 0.6);
 }
 
-
-
 .bmi-calculator button {
   width: 224px;
   padding: 16px 40px 16px 40px;
@@ -484,4 +446,188 @@ font-weight: 400;
   background: rgb(230, 83, 60);
 }
 
+
+
+
+
+.team-section {
+  text-align: center;
+  margin: 88px 190px;
+  border: 1px solid red;
+}
+
+.team-header{
+  display: flex;
+  flex-direction: column;
+  width: 671px;
+  height: 120px;
+  margin: 0px 194.5px 58px 194.5px;
+  border: 1px solid white;
+}
+
+.heading{
+  width: 364px;
+  height: 58px;
+  color: rgb(255, 255, 255);
+  font-size: 48px;
+  font-weight: 900;
+  margin-top: 0px;
+  margin-left: 153.5px;
+  border: 1px solid red;
+}
+
+ .team-description {
+  width: 100%;
+  height: 48px;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: -28px;
+  margin-bottom: 20px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  border: 1px solid yellow;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.team-grid {
+  border: 2px solid green;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.1);
+} 
+
+.team-member {
+  /* width: 50%; */
+  /* height: 272px; */
+  /* margin: 20px 20px; */
+  position: relative;
+  border: 2px solid yellow;
+  border-radius: 18px;
+  background: rgba(0, 0, 0, 0.2),url(image);
+}
+
+.team-member img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  opacity: 70%;
+}
+
+.team-para {
+  position: absolute;
+  bottom: 8%;
+  left: 5%;
+  text-align: left;
+}
+.team-member h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.team-member p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+
+
+
+.footer-section {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
+  height: 489px;
+  margin-top: 88px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  width: 73.5%;
+  margin-top: 66px;
+  margin-left: 190px;
+  margin-bottom: 79px;
+}
+
+.footer-logo{
+  width: 443px;
+  height: 176px;
+  margin-top: 0px;
+  margin-bottom: 73px;
+}
+.footer-logo h1{
+  color: rgb(230, 83, 60);
+  font-size: 70px;
+  font-weight: 800;
+  margin: 0px;
+}
+
+.footer-logo p {
+  width: 100%;
+  height: 72px;
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 400;
+  letter-spacing: 0.3px;
+}
+
+.footer-links{
+  width: 181px;
+  height: 249px;
+  
+}
+.get-started1{
+  margin-left: 102px;
+  margin-right: 152px;
+}
+.footer-links h2 {
+  width: 100%;
+  height: 38px;
+  margin-top: 0px;
+  color: rgb(255, 255, 255);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.footer-links ul {
+  list-style: none;
+  margin-top: 39px;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 20px;
+}
+
+.footer-links ul li a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+
+
+.footer-bottom {
+  text-align: center;
+  width: 1059.5px;
+  height: 0;
+  margin-left: 189px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom p {
+  font-size: 20px;
+  font-weight: 400px;
+  margin-bottom: 35px;
+  color: rgba(255, 255, 255, 0.5);
+}
 
