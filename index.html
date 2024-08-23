@@ -7,11 +7,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header class="bg-light">
         <nav class="navbar">
-            <div class="logo">Fitness</div>
+            <h1 class="logo">
+                Fitness
+            </h1>
             <ul class="nav-icon">
                 <li><a href="#" class="active">Home</a></li>
                 <li><a href="#">Service</a></li>
@@ -64,8 +67,7 @@
         
     </header>
     <main>
-
-        <div class="changing-habit">
+        <section class="changing-habit">
             <div class="heading-habits">
                 <h1 class="name-habit">Change Your Habits</h1>
                 <p class="habit-para">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
@@ -92,7 +94,7 @@
                     <p class="img-descript">We believe fitness should be accessible to everyone.</p>
                 </div>                 
             </div>
-        </div>
+        </section>
         
         <section class="run">
             <div class="description">
@@ -104,63 +106,65 @@
                 <img class="runimage" src="images/run.jpg" alt="">
             </div>
         </section>
-        <div class="bmi-cal">
-            <h1 class="bmi">BMI Calculator</h1>
-            <p class="bmi-descript">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
-        </div>
 
-        <div class="bmi-section">
-            <div class="bmi-chart">
-                <h2 class="bmi-chart-head">BMI Calculator Chart</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>BMI</th>
-                            <th>Weight Status</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Below 18.5</td>
-                            <td>Underweight</td>
-                        </tr>
-                        <tr>
-                            <td>18.5 - 24.9</td>
-                            <td>Healthy</td>
-                        </tr>
-                        <tr>
-                            <td>25.0 - 29.9</td>
-                            <td>Overweight</td>
-                        </tr>
-                        <tr>
-                            <td>30.0 - and Above</td>
-                            <td>Obese</td>
-                        </tr>
-                    </tbody>
-                </table>
+        <section class="bmi-section">
+            <div class="bmi-cal">
+                <h1 class="bmi">BMI Calculator</h1>
+                <p class="bmi-descript">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
             </div>
-            <div class="bmi-calculator">
-                <h2>Calculate your BMI</h2>
-                <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
-                <form>
-                    <input class="bmi-input" type="text" placeholder="Height/cm">
-                    <input class="bmi-input" type="text" placeholder="Weight/kg">
-                    <input class="bmi-input" type="text" placeholder="Age">
-                    <select class="bmi-sex">
-                        <option value="">Sex</option>
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                    </select>
-                    <select class="select-activity">
-                        <option value="">Select an activity factor</option>
-                        <option value="low">Low</option>
-                        <option value="medium">Medium</option>
-                        <option value="high">High</option>
-                    </select>
-                </form>
-                <button type="submit">Calculate</button>
+            <div class="bmi-container">
+                <div class="bmi-chart">
+                    <h2 class="bmi-chart-head">BMI Calculator Chart</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>BMI</th>
+                                <th>Weight Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Below 18.5</td>
+                                <td>Underweight</td>
+                            </tr>
+                            <tr>
+                                <td>18.5 - 24.9</td>
+                                <td>Healthy</td>
+                            </tr>
+                            <tr>
+                                <td>25.0 - 29.9</td>
+                                <td>Overweight</td>
+                            </tr>
+                            <tr>
+                                <td>30.0 - and Above</td>
+                                <td>Obese</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="bmi-calculator">
+                    <h2>Calculate your BMI</h2>
+                    <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+                    <form>
+                        <input class="bmi-input" type="text" placeholder="Height/cm">
+                        <input class="bmi-input" type="text" placeholder="Weight/kg">
+                        <input class="bmi-input" type="text" placeholder="Age">
+                        <select class="bmi-sex">
+                            <option value="">Sex</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                        <select class="select-activity">
+                            <option value="">Select an activity factor</option>
+                            <option value="low">Low</option>
+                            <option value="medium">Medium</option>
+                            <option value="high">High</option>
+                        </select>
+                    </form>
+                    <button type="submit">Calculate</button>
+                </div>
             </div>
-        </div>
+        </section>
 
 
         
@@ -243,13 +247,11 @@
                 </ul>
             </div>
         </div>
-
         <div class="footer-bottom">
+            <hr>
             <p>All rights reserved &copy;Fitness 2024</p>
         </div>
     </footer>
     
-    
-        
  </body>
 </html>
